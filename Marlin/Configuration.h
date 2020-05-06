@@ -318,7 +318,7 @@
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
 #define TEMP_SENSOR_4 0
-#define TEMP_SENSOR_BED 70
+#define TEMP_SENSOR_BED 0
 #define TEMP_SENSOR_CHAMBER 0
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
@@ -615,7 +615,6 @@
  * Default Axis Steps Per Unit (steps/mm)
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
-#define DEFAULT_AXIS_STEPS_PER_UNIT { 200*16/14, 200*16/14, 200*16/14, 250 }
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT { 200*16/14, 200*16/14, 200*16/14, 250 }
 
@@ -657,7 +656,7 @@
 #define DEFAULT_XJERK                 5.0
 #define DEFAULT_YJERK                 5.0
 #define DEFAULT_ZJERK                 5.0
-#define DEFAULT_EJERK                  5.0
+#define DEFAULT_EJERK                 5.0
 
 /**
  * S-Curve Acceleration
@@ -859,7 +858,7 @@
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
 #define INVERT_Y_DIR false
-#define INVERT_Z_DIR false
+#define INVERT_Z_DIR true
 
 // @section extruder
 
@@ -897,7 +896,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 80
+#define Z_MAX_POS 75.6
 
 /**
  * Software Endstops
